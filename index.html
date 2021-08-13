@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Clothing store</title>
+</head>
+
+<body>
+    <!-- vertical navabar -->
+    <div class="navbar">
+        <div class="nav-logo"><a href="#">LOGO</a></div>
+        <div class="nav-links">
+            <a href="#">Shirts</a>
+            <a href="#">Dresses</a>
+            <a href="javascript:void(0)" onclick="dropShow('myBtn')" style="color: black;">Jeans <i
+                    class="fa fa-caret-down"></i></a>
+            <div class="dropdown" id="myBtn" style="display: flex;">
+                <a href="#" style="color: black;"> <i class="fa fa-caret-right"></i> Skinny</a>
+                <a href="#">Relaxed</a>
+                <a href="#">Bootcut</a>
+                <a href="#">Stright</a>
+            </div>
+            <a href="#">Jackets</a>
+            <a href="#">Gymwear</a>
+            <a href="#">Blazer</a>
+            <a href="#">Shoes</a>
+
+            <a href="#Contact" class="mt tab">Contact</a>
+            <a href="#" class="tab">Newsletter</a>
+            <a href="#Suscribe" class="tab">Suscribe</a>
+        </div>
+    </div>
+    <!-- hidden div -->
+    <div class="hidden"></div>
+    <!-- right container -->
+    <div class="container">
+        <!-- headings -->
+        <div class="head">
+            <p>Jeans</p>
+            <div class="link">
+                <a href="#"> <i class="fa fa-shopping-cart"></i> </a>
+                <a href="#" style="padding: 0px;"> <i class="fa fa-search"></i> </a>
+            </div>
+        </div>
+        <!-- highlighted content -->
+        <div class="highlight">
+            <img src="https://www.w3schools.com/w3images/jeans.jpg" alt="highlight image">
+            <div class="highlight-content">
+                <h1>New arrivals</h1>
+                <h3>COLLECTION 2020</h3>
+                <a href="#"><button class="btn">SHOP NOW</button></a>
+            </div>
+        </div>
+        <!-- product cards -->
+        <div class="products">
+            <div class="card">
+                <img src="https://www.w3schools.com/w3images/jeans1.jpg">
+                <div class="middle">
+                    <a href="#"> <button class="btn btn-medium">BUY NOW <i class="fa fa-shopping-cart"></i></button>
+                    </a>
+                </div>
+                <p>Ripped Skinny Jeans</p>
+                <p><strong>$24.99</strong></p>
+            </div>
+            <div class="card">
+                <img src="https://www.w3schools.com/w3images/jeans2.jpg">
+                <div class="middle">
+                    <a href="#"> <button class="btn btn-medium">BUY NOW <i class="fa fa-shopping-cart"></i></button>
+                    </a>
+                </div>
+                <p>Mega Ripped Jeans</p>
+                <p><strong>$24.99</strong></p>
+            </div>
+            <div class="card">
+                <img src="https://www.w3schools.com/w3images/jeans3.jpg">
+                <div class="middle">
+                    <a href="#"> <button class="btn btn-medium">BUY NOW <i class="fa fa-shopping-cart"></i></button>
+                    </a>
+                </div>
+                <p>Washed Skinny Jeans</p>
+                <p><strong>$24.99</strong></p>
+            </div>
+            <div class="card">
+                <img src="https://www.w3schools.com/w3images/jeans4.jpg">
+                <div class="middle">
+                    <a href="#"> <button class="btn btn-medium">BUY NOW <i class="fa fa-shopping-cart"></i></button>
+                    </a>
+                </div>
+                <p>Vintage Skinny Jeans</p>
+                <p><strong>$24.99</strong></p>
+            </div>
+            <div class="card">
+                <img src="https://www.w3schools.com/w3images/jeans3.jpg">
+                <div class="middle">
+                    <a href="#"> <button class="btn btn-medium">BUY NOW <i class="fa fa-shopping-cart"></i></button>
+                    </a>
+                </div>
+                <p>Washed Skinny Jeans</p>
+                <p><strong>$24.99</strong></p>
+            </div>
+            <div class="card">
+                <img src="https://www.w3schools.com/w3images/jeans4.jpg">
+                <div class="middle">
+                    <a href="#"> <button class="btn btn-medium">BUY NOW <i class="fa fa-shopping-cart"></i></button>
+                    </a>
+                </div>
+                <p>Vintage Skinny Jeans</p>
+                <p><strong>$24.99</strong></p>
+            </div>
+            <div class="card">
+                <img src="https://www.w3schools.com/w3images/jeans1.jpg">
+                <div class="middle">
+                    <a href="#"> <button class="btn btn-medium">BUY NOW <i class="fa fa-shopping-cart"></i></button>
+                    </a>
+                </div>
+                <p>Ripped Skinny Jeans</p>
+                <p><strong>$24.99</strong></p>
+            </div>
+            <div class="card">
+                <img src="https://www.w3schools.com/w3images/jeans2.jpg">
+                <div class="middle">
+                    <a href="#"> <button class="btn btn-medium">BUY NOW <i class="fa fa-shopping-cart"></i></button>
+                    </a>
+                </div>
+                <p>Mega Ripped Jeans</p>
+                <p><strong>$24.99</strong></p>
+            </div>
+        </div>
+        <!-- Subscribe -->
+        <div class="subscribe" id="Suscribe">
+            <h1>Subscribe</h1>
+            <p>To get special offers and VIP treatment:</p>
+            <form action="#">
+                <input type="email" name="text" placeholder="Enter e-mail" class="email">
+                <input type="submit" class="btn-red" value="Suscribe">
+            </form>
+        </div>
+        <!-- footer -->
+        <div class="footer">
+            <div class="contact" id="Contact">
+                <h3>Contact</h3>
+                <p>Questions? Go ahead.</p>
+                <form action="#">
+                    <input type="text" placeholder="Name" class="field">
+                    <input type="email" placeholder="Email" class="field">
+                    <input type="text" placeholder="Subject" class="field">
+                    <input type="text" placeholder="Message" class="field"> <br>
+                    <input type="submit" value="Send" class="btn-contact">
+                </form>
+            </div>
+            <div class="about">
+                <h3>About</h3>
+                <a href="#">About us</a>
+                <a href="#">We're hiring</a>
+                <a href="#">Support</a>
+                <a href="#">Find store</a>
+                <a href="#">Shipment</a>
+                <a href="#">Payment</a>
+                <a href="#">Gift card</a>
+                <a href="#">Return</a>
+                <a href="#">Help</a>
+            </div>
+            <div class="store">
+                <h3>Store</h3>
+                <p><i class="fa fa-map-marker"></i> Company name</p>
+                <p><i class="fa fa-phone"></i> 0011223344</p>
+                <p><i class="fa fa-envelope"></i> ex@gmail.com</p>
+                <h3>We accept</h3>
+                <p><i class="fa fa-cc-amex"> Amex</i></p>
+                <p><i class="fa fa-credit-card"></i> Credit Card</p>
+            </div>
+        </div>
+
+        <div class="weblink">
+            <p>Powered by: <a href="#">meroPasal.com</a></p>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>

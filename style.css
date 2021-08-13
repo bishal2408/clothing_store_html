@@ -1,0 +1,359 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    width: 85%;
+    margin:auto;
+    background-color: rgb(247, 242, 242);
+}
+
+.hidden {
+    width: 25%;
+}
+/* vertical navbar */
+.navbar {
+    /* background: blueviolet; */
+    width: 17%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    overflow: auto;
+}   
+
+.nav-logo {
+    padding-top: 2rem;
+    margin-bottom: 4rem;
+}
+
+.nav-logo a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.3rem;
+    letter-spacing: .4em;
+    font-weight: 900;
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(75, 66, 66, .03);
+}
+
+.nav-links a{
+    text-decoration: none;
+    font-size: 1.1rem;
+    letter-spacing: .1em;
+    margin: 2px 0px;
+    font-weight: 900;
+    color: rgb(77, 72, 72);
+    padding: 10px 15px;
+}
+
+.nav-links a:hover {
+    background-color: rgb(201, 196, 198);
+    color: black;
+}
+
+.nav-links .mt {
+    margin-top: 3rem;
+}
+.nav-links .tab {
+    margin-bottom: 0;
+    font-weight: 300;
+    font-size: 1rem;
+    color: black;
+}
+
+.dropdown {
+    /* display: flex; */
+    flex-direction: column;
+    margin-left: 25px;
+    width: auto;
+}
+
+.dropdown a {
+    font-size: .9rem;
+    margin: 0;
+}
+
+/* main container */
+
+.container {
+    margin-left: 15px;
+    width: 100%;
+}
+/* head */
+
+.head {
+    padding-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.head p {
+    text-decoration: none;
+    color: black;
+    font-size: 1.4rem;
+    letter-spacing: .05em;
+}
+
+.link{
+    text-align: end;
+}
+.link a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.4rem;
+    padding-right: 14px;
+}
+
+/* highlighted content */
+.highlight {
+    margin-top: 1.7rem;
+}
+
+.highlight img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.highlight-content {
+    position: absolute;
+    left: 28%;
+    top: 22%;
+    width: 30%;
+}
+
+.highlight-content h1{
+    color: white;
+    font-size: 3.5rem;
+    font-weight: 300;
+    letter-spacing: .2rem;
+    margin-bottom: 10px;
+}
+
+.highlight-content h3{
+    color: white;
+    font-size: 1.7rem;
+    font-weight: 300;
+    letter-spacing: .1rem;
+    margin-bottom: 10px;
+}
+
+.highlight-content a{
+    text-decoration:none;
+    color: white;
+}
+
+.btn{
+    color: white;
+    background-color: black;
+    padding: 18px 30px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: rgb(180, 180, 180);
+    color: black;
+}
+
+/* product div contents css */
+.products {
+    margin-top: 2.5rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+.card {
+    position: relative;
+}
+
+.card img {
+    width: 100%;
+    margin-bottom: .6em;
+    filter: grayscale(50%);
+}
+
+.middle .btn-medium {
+    padding: 10px 15px;
+    position: absolute;
+    left: 25%;
+    top: 35%;
+    opacity: 0;
+}
+
+.card:hover .btn-medium {
+    opacity: 1;
+}
+
+/* suscribe */
+
+.subscribe {
+    margin-top: 1rem;
+    background-color: black;
+    width: auto;
+    color: white;
+    /* height: 30%; */
+    padding: 3%;
+}
+
+.subscribe h1 {
+    font-size: 2.6rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.subscribe form {
+    margin-top: 17px;
+}
+
+.subscribe .email {
+    width: 96%;
+    border: none;
+    padding: 12px;
+    font-size: 1.2rem;
+    border-radius: 4px;
+}
+
+.subscribe .btn-red {
+    color: white;
+    background-color: #f44336;
+    padding: 14px 25px;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 17px;
+}
+
+.subscribe .btn-red:hover {
+    background-color: rgb(180, 180, 180);
+    color: black;
+}
+
+/* footer */
+.footer {
+    text-align: center;
+    margin-top: 3rem;
+    display: flex;
+}
+/* contact css */
+.contact {
+    width: 50%;
+    text-align: center;
+}
+
+.contact h3 {
+    font-size: 1.1rem;
+    font-weight: 500;
+    letter-spacing: .1rem;
+    margin-bottom: .4rem;
+}
+
+.contact p {
+    font-size: .9em;
+    letter-spacing: .1rem;
+    margin-bottom: .6rem;
+}
+
+.contact form .field{
+    border: 1px solid rgb(187, 187, 187);
+    margin-bottom: 15px;
+    padding: 7px 7px;
+    width: 70%;
+    letter-spacing: .1rem;
+    font-size: .8rem;
+}
+
+.contact form .btn-contact {
+    font-size: .8rem;
+    width: 74%;
+    letter-spacing: .1rem;
+    background-color: black;
+    color: white;
+    padding: 5px 0px;
+    border: none;
+    cursor: pointer;
+    transition: 200ms;
+}
+
+.contact form .btn-contact:hover {
+    background-color: rgb(180, 180, 180);
+    color: black;
+    border: 1px solid rgb(26, 25, 25);
+}
+
+/* about */
+.about {
+    width: 25%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.about h3{
+    font-size: 1.1rem;
+    font-weight: 500;
+    letter-spacing: .1rem;
+    margin-bottom: .4rem;
+    margin-bottom: 15px;
+}
+
+.about a {
+    color: black;
+    margin-bottom: 10px;
+    font-size: .9rem;
+}
+
+/* store */
+.store {
+    width: 25%;
+    text-align: left;
+}
+
+.store p {
+    font-size: .8rem;
+    margin-bottom: 10px;
+    padding-left: 10px;
+}
+
+.store p .fa {
+    padding-right: 5px;
+}
+
+.store h3 {
+    font-size: 1.1rem;
+    font-weight: 500;
+    letter-spacing: .1rem;
+    margin-bottom: .4rem;
+    margin-bottom: 15px;
+}
+/* weblink css */
+.weblink {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    height: 7vh;
+}
+
+.weblink p {
+    font-size: 1rem;
+    letter-spacing: .05rem;
+}
+
+.weblink p a{
+    text-decoration: none;
+    color: white;
+}
+
+.weblink p a:hover{
+    color: rgb(134, 248, 134);
+}
